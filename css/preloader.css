@@ -1,0 +1,31 @@
+.loader {
+    transition: 0.3s cubic-bezier(1, 0.01, 0.29, 1.01);
+    background-color: #fa8072;
+    left: 0;
+    right: 100%;
+    position: absolute; 
+    height: 100vh;
+    z-index: 101;
+  }
+  
+  .loader i {
+    position: fixed;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+  color: #fff;
+  }
+  
+  body {
+    margin: 0;
+  }
+  .loading:after {
+    background-color: #fff;
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  

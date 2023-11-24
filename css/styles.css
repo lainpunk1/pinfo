@@ -1,0 +1,200 @@
+@font-face {
+  font-family: nueHasUnica;
+  src: url(../assets/fonts/NeueHaasUnica-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: nueHasUnica;
+}
+body {
+  background-color: #ffffff;
+  color: #161616;
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 80px;
+  width: 100%;
+}
+header .img img {
+  width: 40px;
+  padding: 20px 20px;
+}
+header .heading {
+  margin-left: auto;
+  justify-content: flex-end;
+  flex-direction: column;
+  font-size: 0.6rem;
+}
+header .menu img {
+  width: 35px;
+  padding: 0px 50px;
+}
+.container {
+  height: 100vh;
+  width: 99%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.inner-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: transparent;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1) ease-in-out;
+}
+
+
+
+.pinfo {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: flex-end;
+  z-index: 99;
+}
+
+.client,
+.logos,
+.description {
+  flex: 1;
+}
+
+.client-logo img {
+  max-width: 64px; /* Set the maximum width */
+  height: auto; /* Maintain the aspect ratio */
+}
+
+.client {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.client-text,
+.client-logo {
+  margin: 0;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally */
+  justify-content: start;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align text to the bottom */
+  align-items: flex-end; /* Align text to the right */
+  height: 100%; /* Ensure the description container takes up full height */
+}
+
+
+.text-container {
+  writing-mode: vertical-lr; /* Use vertical writing mode */
+  transform: rotate(180deg); /* Rotate and mirror the text */
+  font-size: 0.6rem;
+}
+
+
+.inner-container .inner-inner-container {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  margin-top: 20%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  border-left: 1px solid rgba(0, 0, 0, 0.281);
+  object-fit: contain;
+  padding-right: 10px;
+}
+
+
+
+
+.mask {
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  -webkit-mask-image: url(../assets/icons/mask.png);
+  mask-image: url(../assets/icons/mask.png);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.inner-inner-container .brandimage {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+}
+
+/* .top-section h1 {
+  font-size: 3rem;
+  font-family: "Kenoky";
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+.top-section p {
+  padding: 0.5rem 0px;
+  font-family: "Neutral Face";
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding-left: 2px;
+}
+.inner-container .bottom-section {
+  font-size: 25rem;
+  margin-bottom: 50px;
+  font-family: "Kenoky";
+  font-weight: lighter;
+  color: #05008f;
+} */
+/* .inner-container:hover .top-section h1 {
+  transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  color: white;
+}
+.inner-container:hover .top-section p {
+  transition: color 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+  color: white;
+}
+
+.inner-container:hover .bottom-section {
+  transition: color 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  color: white;
+}
+.inner-container-1:hover {
+  background-image: url(1.jpg);
+}
+
+.inner-container-2:hover {
+  background-image: url(2.jpg);
+}
+
+.inner-container-3:hover {
+  background-image: url(3.jpg);
+}
+
+.inner-container-4:hover {
+  background-image: url(4.jpg);
+}
+
+.inner-container-5:hover {
+  background-image: url(5.jpg);
+} */
