@@ -1,4 +1,4 @@
-function startLoader() {
+/* function startLoader() {
     const loader = document.querySelector(".loader");
   
     setTimeout(function() {
@@ -14,4 +14,4 @@ function startLoader() {
   }
   
   startLoader();
-  
+   */
