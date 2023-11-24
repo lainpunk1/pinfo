@@ -1,17 +1,13 @@
-/* function startLoader() {
-    const loader = document.querySelector(".loader");
-  
-    setTimeout(function() {
-      loader.style.right = "0";
-    }, 1000);
-  
-    window.addEventListener("DOMContentLoaded", function(event) {
-      setTimeout(function() {
-        loader.style.left = "100%";
-        document.body.classList.remove("loading");
-      }, 1500);
-    });
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+      document.querySelector(
+          "body").style.visibility = "hidden";
+      document.querySelector(
+          "#loader").style.visibility = "visible";
+  } else {
+      document.querySelector(
+          "#loader").style.display = "none";
+      document.querySelector(
+          "body").style.visibility = "visible";
   }
-  
-  startLoader();
-   */
+};
