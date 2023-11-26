@@ -1,12 +1,13 @@
 @font-face {
-  font-family: nueHasUnica;
-  src: url(../assets/fonts/NeueHaasUnica-Regular.ttf);
+  font-family: 'Unica';
+  src: url('../assets/fonts/NeueHaasUnica-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
-
 * {
   margin: 0;
   padding: 0;
-  font-family: nueHasUnica;
+  font-family: 'Unica';
 }
 body {
   background-color: #ffffff;
@@ -32,7 +33,7 @@ header .heading {
   flex-direction: column;
   font-size: 0.6rem;
 }
-header .menu img {
+header .menu .menu-icon {
   width: 35px;
   padding: 0px 50px;
 }

@@ -1,0 +1,204 @@
+.menu-container {
+  z-index: 9999;
+  position: absolute;
+  width: 100vw;
+  height: 0vw;
+  display: flex;
+  background-image: url(../assets/images/menu-bg.png); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  pointer-events: none;
+  padding-top: 1vw;
+  
+}
+
+.menu-container.hidden {
+  height: 0;
+  padding: 0; /* Set padding to 0 when the menu is hidden */
+}
+
+.menu-section-1 {
+  flex: 60;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  
+  
+}
+
+.menu-section-inner-1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding-left: 1vw;
+  box-sizing: border-box;
+}
+
+
+.trademark {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 12vw;
+  font-family: 'Unica';
+  margin-bottom: -2vw;
+  color: #000000;
+  white-space: nowrap;
+  letter-spacing: -0.07em;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+
+
+.menu-section-inner-2 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.pt-buttons {
+  flex: 1;
+  align-items: center;
+  text-align: initial;
+  display: flex;
+  flex-direction: row;
+  padding-left: 1vw;
+}
+
+.privacy-policy,
+.terms-conditions {
+  flex: 1;
+  text-decoration: underline;
+  cursor: pointer;
+  color: #000000;
+  font-family: 'Unica';
+  font-size: 1vw;
+  opacity: 0.6;
+  padding-left: 1vw;
+}
+
+.privacy-policy:hover,
+.terms-conditions:hover {
+  color: #ffd700;
+}
+
+.social-media {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.social-icons img {
+  width: 1.5vw;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+address {
+  font-family: 'Unica';
+  font-size: 1vw;
+  text-align: left;
+  font-style: normal;
+  color: #000000;
+}
+
+address p {
+  margin: 0;
+}
+
+.info-right {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-family: 'Unica';
+  font-size: 1vw;
+  text-align: left;
+  font-style: normal;
+  color: #000000;
+}
+
+.logo {
+  padding-right: 1vw;
+}
+
+.logo img {
+  width: 2vw;
+}
+
+.menu-section-2 {
+  flex: 18;
+  padding-left: 2vw;
+  padding-bottom: 3vw;
+  text-align: center;
+  color: #000000;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu-button {
+  font-family: 'Unica';
+  flex: 1;
+  cursor: pointer;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-size: 2vw;
+}
+
+.menu-button-services {
+  font-family: 'Unica';
+  flex: 1;
+  cursor: pointer;
+  color: #000000;
+  display: flex;
+  align-items: center;
+  text-align: start;
+  font-size: 2vw;
+  margin-left: 4vw;
+}
+
+.menu-button:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+.menu-section-3 {
+  text-align: center;
+  color: #000000;
+  font-size: 2vw; /* Adjust the font size as needed */
+  cursor: pointer;
+  margin-right: 2vw;
+}
+
+.menu-section-3:hover {
+  color: #ffd700;
+}
+
+.menu-section-1:last-child {
+  border-right: none;
+}
