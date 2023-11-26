@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const menuContainer = document.querySelector(".menu-container");
     const menuSection2Buttons = document.querySelectorAll(".menu-button-services, .menu-button, .trademark, .menu-section-inner-2");
     const closeButton = document.querySelector(".menu-section-3");
-    const blurElements = document.querySelectorAll(".welcome-screen");
+    const blurElements = document.querySelectorAll(".content");
 
     let tl = gsap.timeline({ paused: true });
 
@@ -21,8 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }, "-=0.25");
 
     tl.to(blurElements, {
-        filter: "blur(5px)", // Adjust the blur amount as needed
-        duration: 0.2,
+        filter: "blur(8px)", // Adjust the blur amount as needed
+        duration: 0.3,
     }, "-=0.5");
 
     function openMenu() {
