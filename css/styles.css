@@ -14,15 +14,6 @@ body {
   color: #161616;
   overflow: hidden;
 }
-
-.hide-on-desktop{
-  display: none;
-}
-
-a {
-  all: unset;
-  text-decoration: none;
-}
 header {
   position: absolute;
   display: flex;
@@ -132,6 +123,7 @@ header .menu .menu-icon {
   justify-content: space-between;
   flex-direction: column;
   border-left: 1px solid rgba(0, 0, 0, 0.281);
+  object-fit: contain;
   padding-right: 10px;
 }
 
